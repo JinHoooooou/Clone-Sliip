@@ -1,13 +1,13 @@
 # 정리
 
-1. 개발 환경
+## 1. 개발 환경
    * Java8
    * IntelliJ 2020.01
    * Spring Boot 2.5.0
    * MySQL
    * Thymeleaf
 
-2. MySql 연동
+## 2. MySql 연동
 
 프로젝트 생성 후 실행하면 다음과 같은 에러 메시지가 나온다.
 
@@ -33,3 +33,29 @@ H2 데이터베이스를 사용할 경우 자동으로 설정을 잡아주기 �
   * username / password : mysql 계정이름과 비밀번호를 작성한다.
 
 설정 입력후 다시 실행을 하면 정상적으로 실행이된다.
+
+
+
+## 3. Hello World
+
+`src/main/resources/static`에 `index.html`을 생성한다.
+
+* ```html
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+  </head>
+  <body>
+  <p> Hello World!</p>
+  </body>
+  </html>
+  ```
+
+실행하고 `https://localhost:8080`에 접속하면 다음과 같이 `index.html`페이지가 실행된다.
+
+* ![image-20210605171302541](README.assets/image-20210605171302541.png)
+
+
+
