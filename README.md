@@ -269,3 +269,8 @@ view 처리를 하는 방법을 알아보고 내가 아는 수준에서는
   ```
 
   * 이때 Controller의 매핑되는 메서드의 return String이 resources/templates에 있는 html파일 이름과 같아야하고, `@GetMapping`어노테이션의 value와 요청하는 url과 같아야한다. 
+
+페이지를 만들 때는 `resoures/templates`에 html파일을 만들고 Controller 클래스에서 매핑해주는 메서드를 만들어 주면 된다.
+
+그러면 회원 가입 기능을 만드려면 어떻게 해야할까?
+
