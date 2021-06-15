@@ -16,4 +16,10 @@ public class HomeController {
   public String signUpForm() {
     return "signUpForm";
   }
+
+  @PostMapping("/create")
+  public String create(User user) {
+    userService.create(user);
+    return "index";
+  }
 }
