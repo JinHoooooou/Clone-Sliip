@@ -12,7 +12,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="">Sliip</a>
+    <a class="navbar-brand" href="/">Sliip</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +32,7 @@
 </nav>
 <h1>회원 가입 페이지</h1>
 <div class="container">
-  <form method="post" action="/createUser">
+  <form method="post" action="/create">
     <div class="mb-3">
       <label for="sign-up-form-userId" class="form-label">사용자 아이디</label>
       <input type="text" class="form-control" id="sign-up-form-userId" name="userId">
@@ -43,11 +43,11 @@
     </div>
     <div class="mb-3">
       <label for="sign-up-form-name" class="form-label">이름</label>
-      <input type="password" class="form-control" id="sign-up-form-name" name="name">
+      <input type="text" class="form-control" id="sign-up-form-name" name="name">
     </div>
     <div class="mb-3">
       <label for="sign-up-form-email" class="form-label">이메일</label>
-      <input type="password" class="form-control" id="sign-up-form-email" name="email">
+      <input type="text" class="form-control" id="sign-up-form-email" name="email">
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
