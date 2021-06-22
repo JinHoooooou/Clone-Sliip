@@ -6,4 +6,7 @@ spring:
     password: Q1w2e3r41!
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: none
+  sql:
+    init:
+      enabled: false
