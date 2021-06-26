@@ -23,4 +23,16 @@ public class UserService {
   public User getUserInfo(String userId) {
     return userRepository.findByUserId(userId);
   }
+
+  public User login(String userId, String password) {
+    User user = userRepository.findByUserId(userId);
+    if (user == null) {
+      return null;
+    }
+    if (!password.equals(user.getPassword())) {
+      return null;
+    }
+
+    return user;
+  }
 }
