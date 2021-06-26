@@ -2,6 +2,7 @@ package com.app.controller;
 
 import com.app.dto.User;
 import com.app.service.UserService;
+import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,6 +21,17 @@ public class UserController {
   @GetMapping("/login")
   public String loginForm() {
     return "users/login";
+  }
+
+  @PostMapping("/login")
+  public String login(String userId, String password, HttpSession session) {
+    User user = userService.login(userId, password);
+    if(user == null) {
+      return "users/loginFailed";
+    }
+
+    session.setAttribute("user", user);
+    return "redirect:/";
   }
 
   @GetMapping("/signUpForm")
